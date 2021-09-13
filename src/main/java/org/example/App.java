@@ -27,7 +27,7 @@ public class App
         System.out.print("Enter the quantity of item 3: ");
         int itemThreeQuantity = scanner.nextInt();
 
-        //Processing
+        //Calculations
         double subTotal = (itemOnePrice * itemOneQuantity) + (itemTwoPrice * itemTwoQuantity)
                 + (itemThreePrice * itemThreeQuantity);
         double tax = subTotal * .055;
