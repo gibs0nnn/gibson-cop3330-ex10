@@ -15,17 +15,25 @@ public class App
 
         //Input
         System.out.print("Enter the price of item 1: ");
-        int itemOnePrice = scanner.nextInt();
+        String strItemOnePrice = scanner.next();
         System.out.print("Enter the quantity of item 1: ");
-        int itemOneQuantity = scanner.nextInt();
+        String strItemOneQuantity = scanner.next();
         System.out.print("Enter the price of item 2: ");
-        int itemTwoPrice = scanner.nextInt();
+        String strItemTwoPrice = scanner.next();
         System.out.print("Enter the quantity of item 2: ");
-        int itemTwoQuantity = scanner.nextInt();
+        String strItemTwoQuantity = scanner.next();
         System.out.print("Enter the price of item 3: ");
-        int itemThreePrice = scanner.nextInt();
+        String strItemThreePrice = scanner.next();
         System.out.print("Enter the quantity of item 3: ");
-        int itemThreeQuantity = scanner.nextInt();
+        String strItemThreeQuantity = scanner.next();
+
+        //Parsing
+        int itemOnePrice = Integer.parseInt(strItemOnePrice);
+        int itemOneQuantity = Integer.parseInt(strItemOneQuantity);
+        int itemTwoPrice = Integer.parseInt(strItemTwoPrice);
+        int itemTwoQuantity = Integer.parseInt(strItemTwoQuantity);
+        int itemThreePrice = Integer.parseInt(strItemThreePrice);
+        int itemThreeQuantity = Integer.parseInt(strItemThreeQuantity);
 
         //Calculations
         double subTotal = (itemOnePrice * itemOneQuantity) + (itemTwoPrice * itemTwoQuantity)
